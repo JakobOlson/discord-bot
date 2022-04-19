@@ -25,7 +25,7 @@ const welcomeChannelId = "965752365712019520"
 client.on("guildMemberAdd", async (member) => {
     const img = await generateImage(member)
     member.guild.channels.cache.get(welcomeChannelId).send({
-        content: `<@${member.id}> Welcome Bitch!`,
+        content: `<@${member.id}>`,
         files: [img]
     })    
 })
